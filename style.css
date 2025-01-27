@@ -1,0 +1,442 @@
+
+@font-face {
+    font-family: JosefinSans;
+    src:url("./Josefin_Sans/static/JosefinSans-Light.ttf"),
+    url("./Josefin_Sans/static/JosefinSans-ExtraLight.ttf") format("ttf");
+        
+    font-weight: normal;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.home-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+.main{
+   
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon{
+    position: absolute;
+    top: 60px;
+    left: 15.5%;
+}
+.icon img{
+    width: 200px;
+}
+
+.main-2{
+   padding: 20px;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+    margin-top: 250px;
+    margin-left: -20px;
+    
+}
+
+
+.header h1{
+   font-family: JosefinSans;
+    letter-spacing: 20px;
+   line-height: 75px;
+    color: hsl(0, 6%, 24%);
+    font-size: 70px;
+}
+.header h1 span{
+    color:hsl(0, 36%, 70%) ;
+    font-family: JosefinSans;
+}
+.content{
+    width: 400px;
+    
+}
+.content p{
+    font-size: 16px;
+    color:hsl(0, 36%, 70%);
+    font-family:  JosefinSans;
+}
+.search{
+    width: 450px;
+   
+   
+    position: relative;
+}
+.search input{
+    width: 90%;
+    height: 60px;
+    border: 1px solid hsla(0, 36%, 70%, 0.6);
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+    color: rgba(210, 105, 30, 0.441);
+    border-radius: 50px;
+   
+}
+::placeholder{
+    color:hsla(0, 36%, 70%, 0.661);
+    
+}
+.search .btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 78%;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    width: 100px;
+    height: 60px;
+    border-radius: 40px;
+    text-align: center;
+    transition: all 0.5s ease;
+   
+}
+.search .btn:hover{
+    background:linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%)) ;
+}
+.search .btn:hover .imgArr{
+    transform: scale(1.2);
+}
+.imgArr{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('./images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 15px;
+    margin-left: -37px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+   outline: none;
+    
+}
+.image{
+   
+    width: 50%;
+    height: 100vh;
+}
+.image img{
+    width: 100%;
+    background-size: cover;
+
+}
+
+@media (max-width: 1660px) {
+    .image{
+        width: 70%;
+    }
+    
+}
+
+
+@media (max-width: 1532px) {
+    .image{
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 1393px) {
+    .image{
+        width: 85%;
+    }
+    
+}
+
+@media (max-width: 1320px) {
+    .image{
+        width: 70%;
+        height: 100vh;
+    }
+    .image img{
+        width: 100%;
+        
+    }
+    
+}
+
+@media (max-width: 1296px) {
+    .image{
+        width: 80%;
+        height: 100vh;
+    }
+    .image img{
+        width: 100%;
+        
+    }
+ 
+    
+.main-2{
+    
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+    
+     margin-top: 250px;
+     margin-left: -70px;
+     
+ }
+}
+
+
+@media (max-width: 1230px) {
+    
+    
+.main-2{
+    
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+    
+     margin-top: 250px;
+     margin-left: -15%;
+     
+ }
+}
+
+
+@media (max-width: 1206px) {
+    .attribution{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .home-container{
+        flex-direction: column;
+        gap: 47%;
+    }
+    .image{
+        order: 1;
+        width: 100%;
+
+    }
+    .main{
+        order: 2;
+        width: 100%;
+        height: 100vh;
+       
+        
+        
+    }
+    .icon{
+        background-color: white;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 10vh;
+    }
+    .icon img{
+        position: absolute;
+        top: 15px;
+    }
+    .main-2{
+      margin-left: 15%;
+      
+      margin-bottom: 300px;
+    }
+    }
+
+
+    
+@media (max-width: 932px) {
+    body{
+        overflow-x: hidden;
+    }
+    .home-container{
+        flex-direction: column;
+        gap: 20%;
+    }
+    .image{
+        order: 1;
+        width: 100%;
+
+    }
+    .main{
+        order: 2;
+        width: 100%;
+        height: 100vh;
+       
+        
+        
+    }
+    .icon{
+        background-color: white;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 10vh;
+    }
+    .icon img{
+        position: absolute;
+        top: 15px;
+    }
+    .main-2{
+      margin-left: 12%;
+      
+      margin-bottom: 300px;
+    }
+    }
+       
+@media (max-width: 880px) {
+   
+    .home-container{
+        flex-direction: column;
+        gap: 20%;
+    }
+    .main-2{
+      margin-left: 8%;
+      
+      margin-bottom: 300px;
+    }
+    }
+
+          
+@media (max-width: 880px) {
+   
+    .home-container{
+        flex-direction: column;
+        gap: 20%;
+    }
+    .main-2{
+      margin-left: 3%;
+      
+      margin-bottom: 300px;
+    }
+    }
+
+             
+@media (max-width: 716px) {
+   
+    .home-container{
+        flex-direction: column;
+        gap: 10%;
+    }
+    .main-2{
+      margin-left: 0%;
+      
+      margin-bottom: 300px;
+    }
+    }
+                
+@media (max-width: 666px) {
+    .attribution{
+        display: block;
+    }
+    .home-container{
+        flex-direction: column;
+        gap: 0%;
+    }
+    
+   
+    .main-2{
+      margin-left: -5%;
+      
+      margin-bottom: 300px;
+    }
+    }
+                   
+@media (max-width: 632px) {
+   
+    .home-container{
+        flex-direction: column;
+        gap: 0%;
+    }
+   .image{
+    margin-top: 20%;
+   }
+   
+   .main{
+    height: 70vh;
+   }
+    .main-2{
+      margin-left: -10%;
+    }
+    }
+
+                      
+@media (max-width: 600px) {
+  
+    .home-container{
+        flex-direction: column;
+        gap: 7%;
+    }
+   
+   
+   .icon img{
+    top: 25px;
+    left: 15px;
+   }
+    .main-2{
+     margin-top: 30px;
+        width: 100%;
+        text-align: center;
+      margin-right: -50px;
+      justify-content: center;
+      align-items: center;
+
+      
+    }
+    .main{
+        height: 50vh;
+        margin-top: 120px;
+    }
+    .header h1{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    }
+
+                       
+@media (max-width: 476px) {
+   .search input{
+    width: 90%;
+   
+   }
+   .search{
+    width: 100%;
+    margin-left: -20px;
+   }
+   .content{
+    width: 100%;
+   }
+   
+     }
+                          
+@media (max-width: 374px) {
+    .search input{
+     width: 90%;
+    
+    }
+    .search{
+     width: 100%;
+     margin-left: -40px;
+    }
+    .content{
+     width: 100%;
+    }
+    
+      }
+ 
+    
